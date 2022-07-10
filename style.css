@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f6f0e7;
+    
+}
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    grid-template-rows: 20% 80%;
+}
+
+.profile-image{
+    display: block;
+    margin: auto;
+     border: 5px solid red;
+     border-radius: 30%;
+     width: 60%;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.left-section{
+    grid-column: span 1;
+}
+
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+}
+
+.left-content{
+    padding: 1rem;
+    background-color: #6f5361;
+
+}
+
+.icon{
+    display: flex;
+}
+
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+
+}
+
+.education-content{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.chiku2{
+    width: 70%;
+}
+
+.chiku{
+    display: flex;
+    justify-content: end;
+}
+.chiku4{
+    padding-top: 6px;
+}
+
+.chiku1{
+    display: flex;
+    justify-content: end;
+}
+
+.chiku3{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+@media(max-width:673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
